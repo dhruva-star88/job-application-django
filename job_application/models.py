@@ -6,6 +6,7 @@ class Form(models.Model):
     last_name = models.CharField(max_length=80)
     email = models.EmailField()
     date = models.DateField()
+    occupation = models.CharField(max_length=80)
 
     # Magic Method
     def __str__(self):
